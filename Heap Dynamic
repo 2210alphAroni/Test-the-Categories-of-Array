@@ -1,0 +1,18 @@
+C++ code:
+#include <iostream>
+#include <vector>
+int main() {
+    std::vector<int> arr; // Resizable heap array
+    for (int i = 0; i < 10; ++i)
+        arr.push_back(i);
+    for (int val : arr)
+        std::cout << val << " ";
+    return 0;
+}
+
+Javascript code:
+let arr = []; // Fully dynamic, heap-based
+for (let i = 0; i < 10; i++) {
+    arr.push(i);
+}
+console.log(arr);
