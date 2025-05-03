@@ -1,0 +1,21 @@
+C++ code:
+#include <iostream>
+int main() {
+    int size;
+    std::cin >> size;
+    int arr[size];  // Variable Length Array (VLA), stack-allocated
+    for (int i = 0; i < size; ++i)
+        arr[i] = i;
+    for (int i = 0; i < size; ++i)
+        std::cout << arr[i] << " ";
+    return 0;
+}
+
+
+javascript code:
+let size = parseInt(prompt("Enter size: "));
+let arr = new Array(size); 
+for (let i = 0; i < size; i++) {
+    arr[i] = i;
+}
+console.log(arr);
